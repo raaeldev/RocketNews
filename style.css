@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+
+  
+ 
+}
+:root {
+  --body-bg-color: #121214;
+  --text-color: #E1E1E6;
+  --title-color: #04D361;
+  --form-color: #A8A8A8;
+  --bg-button-color: #8257e5;
+
+  
+}
+
+body {
+ 
+  font-family: 'league spartan', sans-serif;
+  display: flex;
+
+}
+
+
+/*----------- CONTAINER ---------*/
+#container{
+  background-color: var(--body-bg-color);
+
+  position: absolute;
+  z-index: 2;
+
+  
+  width: 870px;
+  height: 968px;
+}
+header{
+  width: 100%;
+}
+
+#logo img {
+  margin-top: 50px;
+  margin-left: 30px;
+ 
+  width: 389px;
+  height: 94px;
+}
+
+#infos {
+  margin: 92px 36px;
+  
+  padding-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form label {
+  position: relative;
+  top: 150px;
+  left: 100px;
+  
+}
+
+input[type="text"]{
+  border: none;
+  border-left: var(--title-color) 10px solid;
+
+  width: 998px;
+  height: 48px;
+  padding: 0 16px;
+
+}
+
+button {
+  position: absolute;
+  background-color: var(--bg-button-color);
+  border: none;
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: .2s;
+  background-color: #aa96d9;
+
+}
+
+span a {
+  text-decoration: none;
+  color: var(--bg-button-color);
+
+  display: flex;
+  align-items: center;
+
+  
+  position: relative;
+  top: 200px;
+  right: 325px;
+
+  cursor: pointer;
+}
+
+span a:hover{
+  transition: .2s;
+  color: var(--title-color);
+  border-radius: 3px;
+
+}
+
+
+/*------- Conteudo do container --------*/
+
+.conteudo h1{
+  font-weight: 700;
+  color: var(--title-color);
+
+  margin-bottom: 10px;
+}
+.conteudo p strong {
+  font-weight: 500;
+  color: var(--text-color); 
+}
+.conteudo p{
+  color: var(--form-color);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+
+/*----- BG image-------*/
+
+#imagem img {
+  width: 1700px;
+  height:  968px;
+  margin-left: 376px;
+  
+  position: absolute;
+  z-index: 1;
+}
